@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Orchid\Screens\CalculatorScreen;
 use App\Orchid\Screens\Examples\ExampleActionsScreen;
 use App\Orchid\Screens\Examples\ExampleCardsScreen;
 use App\Orchid\Screens\Examples\ExampleChartsScreen;
@@ -100,5 +101,5 @@ Route::screen('/examples/layouts', ExampleLayoutsScreen::class)->name('platform.
 Route::screen('/examples/grid', ExampleGridScreen::class)->name('platform.example.grid');
 Route::screen('/examples/charts', ExampleChartsScreen::class)->name('platform.example.charts');
 Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.example.cards');
-
+Route::screen('/calculator', CalculatorScreen::class)->name('platform.calculator');
 //Route::screen('idea', Idea::class, 'platform.screens.idea');
